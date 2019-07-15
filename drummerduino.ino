@@ -81,8 +81,8 @@ unsigned long const STATE_TIME[] = {SWING_TIME, BOUNCE_TIME, SWING_TIME, MAX_ULO
 // Setup a beat sequence/rhythm.  These are the start time points within a
 // measure.  Keep the intervals large enough to complete the previous 'beat'
 // (at least: BOUNCE_TIME + 2 x SWING_TIME + stop time
-unsigned long const leftTrack[] = {0, 200000, 40000};// 1/4, 1/4,
-unsigned long const rightTrack[] = {100000, 30000};// null, 1/4, 1/4
+unsigned long const leftTrack[] = {0, 200000, 40000};// 1/2, 1,
+unsigned long const rightTrack[] = {100000, 30000};// null, 1/4, 3/4
 
 // Create motor shield object
 Adafruit_MotorShield AFMS = Adafruit_MotorShield(I2C_ADDR);
