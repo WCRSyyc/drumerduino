@@ -4,7 +4,7 @@
 
 Arduino sketch to control drum sticks to beat a physical drum.
 
-This is currently a shell sketch to get a simple structure that will allow adequaqte
+This is currently a shell sketch to get a simple structure that will allow adequate
 control of a couple of drum sticks attached to and driven by a couple of electric
 car door lock mechanisms.  The motors are driven through an Adafruit motor shield
 (version 2), using their library.

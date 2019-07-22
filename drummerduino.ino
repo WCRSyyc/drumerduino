@@ -21,7 +21,7 @@ part of the profiles, or in the measures (or both)
 - more complex logic, but could enhance the visual aspect
 
 could have multiple profiles for the stick motions, based on the measures to be
-played, or florishes during longer intervals.
+played, or flourishes during longer intervals.
 
 For the visual aspect of drumming, a long swing of the sticks is probably better.
 For top speed (drum roll), as short of swing as will get to the needed terminal
@@ -42,9 +42,7 @@ motion profile:
 - terminal speed (at strike point)
  */
 
-#include <Wire.h>
 #include <Adafruit_MotorShield.h>
-#include "utility/Adafruit_PWMServoDriver.h"
 
 unsigned const int SERIAL_SPEED = 57600;
 //300, 1200, 2400, 4800, 9600, 14400, 19200, 28800, 38400, 57600, 115200
@@ -64,7 +62,7 @@ uint16_t const STRIKE_SPEED = 255; // maximum
 // Initial values taken from tests driving the motors with 5V directly from the
 // Arduino board.  When powered from the (motor rated) 12V, speed will go up, and
 // specified timing intervals will need to come down.
-// All times in microseconds, which without wrap araound compensation will limit
+// All times in microseconds, which without wrap around compensation will limit
 // the maximum run time to a bit over an hour.
 unsigned long const SWING_TIME = 60000;
 unsigned long const BOUNCE_TIME = 20000;
